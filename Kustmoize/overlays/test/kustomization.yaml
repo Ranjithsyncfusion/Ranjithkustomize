@@ -10,4 +10,4 @@ commonLabels:
 resources:
   - namespace.yaml
 
-namespace: bold-services1
+namespace: bold-services
