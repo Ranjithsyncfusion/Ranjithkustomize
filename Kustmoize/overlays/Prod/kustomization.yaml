@@ -9,5 +9,6 @@ commonLabels:
 
 resources:
   - namespace.yaml
+  - ingress.yaml
 
-namespace: bold-services
+namespace: bold-services-prod

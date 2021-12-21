@@ -26,7 +26,7 @@ spec:
         - name: BOLD_SERVICES_HOSTING_ENVIRONMENT
           value: k8s
         - name: APP_BASE_URL
-          value: http://20.185.73.250
+          value: http://52.188.28.52
         - name: INSTALL_OPTIONAL_LIBS
           value: phantomjs,mongodb,mysql,influxdb,snowflake,oracle,npgsql
         readinessProbe:
