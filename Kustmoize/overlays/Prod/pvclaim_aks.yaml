@@ -11,7 +11,7 @@ data:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
- name: bold-fileserver1
+ name: bold-fileserver
  namespace: bold-services-prod
 spec:
  capacity:
@@ -28,13 +28,13 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
- name: bold-fileserver-claim1
+ name: bold-fileserver-claim
  namespace: bold-services-prod
 spec:
  accessModes:
  - ReadWriteMany
  storageClassName: azurefile
- volumeName: bold-fileserver1
+ volumeName: bold-fileserver
  resources:
    requests:
      storage: 3Gi
