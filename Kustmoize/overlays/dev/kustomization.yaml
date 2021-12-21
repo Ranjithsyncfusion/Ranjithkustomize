@@ -9,5 +9,7 @@ commonLabels:
 
 resources:
   - namespace.yaml
+  - ingress.yaml
+  - pvclaim_aks.yaml
 
 namespace: bold-services

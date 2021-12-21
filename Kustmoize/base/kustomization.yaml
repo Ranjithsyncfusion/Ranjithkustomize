@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
   - secrets.yaml
   - log4net_config.yaml
-  - pvclaim_aks.yaml
   - deployment.yaml
   - hpa.yaml
   - service.yaml
