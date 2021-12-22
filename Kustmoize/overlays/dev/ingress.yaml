@@ -22,7 +22,7 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-body-size: 200m
     nginx.ingress.kubernetes.io/server-snippet: |      
       client_max_body_size 200m;
-      set $bold_namespace "bold-services-test";
+      set $bold_namespace "bold-services";
       
       location ~* "^/bi/api(/|$)(.*)" {
         set $namespace      $bold_namespace;
