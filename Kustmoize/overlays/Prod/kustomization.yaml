@@ -11,5 +11,5 @@ resources:
   - namespace.yaml
   - ingress2.yaml
   - pvclaim_aks.yaml
-
+  - deployment.yaml
 namespace: bold-services-prod
