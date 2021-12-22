@@ -29,7 +29,7 @@ metadata:
         set $ingress_name   "bold-ingress2";
         set $service_name   "";
         set $service_port   "";
-        set $location_path  "/biapi6005/bi/api(/|${literal_dollar})(.*)";
+        set $location_path  "/biapi6012/bi/api(/|${literal_dollar})(.*)";
         rewrite_by_lua_block {
                 lua_ingress.rewrite({
                         force_ssl_redirect = false,
@@ -53,7 +53,7 @@ metadata:
         }
         port_in_redirect off;
         set $balancer_ewma_score -1;
-        set $proxy_upstream_name "${bold_namespace}-bi-api-service-6005";
+        set $proxy_upstream_name "${bold_namespace}-bi-api-service-6012";
         set $proxy_host          $proxy_upstream_name;
         set $pass_access_scheme  $scheme;
         set $pass_server_port    $server_port;
@@ -96,7 +96,7 @@ metadata:
         set $ingress_name   "bold-ingress2";
         set $service_name   "";
         set $service_port   "";
-        set $location_path  "/bijobs6006/bi/jobs(/|${literal_dollar})(.*)";
+        set $location_path  "/bijobs6013/bi/jobs(/|${literal_dollar})(.*)";
         rewrite_by_lua_block {
                 lua_ingress.rewrite({
                         force_ssl_redirect = false,
@@ -120,7 +120,7 @@ metadata:
         }
         port_in_redirect off;
         set $balancer_ewma_score -1;
-        set $proxy_upstream_name "${bold_namespace}-bi-jobs-service-6006";
+        set $proxy_upstream_name "${bold_namespace}-bi-jobs-service-6013";
         set $proxy_host          $proxy_upstream_name;
         set $pass_access_scheme  $scheme;
         set $pass_server_port    $server_port;
@@ -163,7 +163,7 @@ metadata:
         set $ingress_name   "bold-ingress2";
         set $service_name   "";
         set $service_port   "";
-        set $location_path  "/bidataservice6007(/|${literal_dollar})(.*)";
+        set $location_path  "/bidataservice6014(/|${literal_dollar})(.*)";
         rewrite_by_lua_block {
                 lua_ingress.rewrite({
                         force_ssl_redirect = false,
@@ -187,7 +187,7 @@ metadata:
         }
         port_in_redirect off;
         set $balancer_ewma_score -1;
-        set $proxy_upstream_name "${bold_namespace}-bi-dataservice-service-6007";
+        set $proxy_upstream_name "${bold_namespace}-bi-dataservice-service-6014";
         set $proxy_host          $proxy_upstream_name;
         set $pass_access_scheme  $scheme;
         set $pass_server_port    $server_port;
@@ -230,7 +230,7 @@ metadata:
         set $ingress_name   "bold-ingress2";
         set $service_name   "";
         set $service_port   "";
-        set $location_path  "/biweb6004/bi(/|${literal_dollar})(.*)";
+        set $location_path  "/biweb6011/bi(/|${literal_dollar})(.*)";
         rewrite_by_lua_block {
                 lua_ingress.rewrite({
                         force_ssl_redirect = false,
@@ -254,7 +254,7 @@ metadata:
         }
         port_in_redirect off;
         set $balancer_ewma_score -1;
-        set $proxy_upstream_name "${bold_namespace}-bi-web-service-6004";
+        set $proxy_upstream_name "${bold_namespace}-bi-web-service-6011";
         set $proxy_host          $proxy_upstream_name;
         set $pass_access_scheme  $scheme;
         set $pass_server_port    $server_port;
@@ -297,7 +297,7 @@ metadata:
         set $ingress_name   "bold-ingress2";
         set $service_name   "";
         set $service_port   "";
-        set $location_path  "/idapi6001/api(/|${literal_dollar})(.*)";
+        set $location_path  "/idapi6008/api(/|${literal_dollar})(.*)";
         rewrite_by_lua_block {
                 lua_ingress.rewrite({
                         force_ssl_redirect = false,
@@ -321,7 +321,7 @@ metadata:
         }
         port_in_redirect off;
         set $balancer_ewma_score -1;
-        set $proxy_upstream_name "${bold_namespace}-id-api-service-6001";
+        set $proxy_upstream_name "${bold_namespace}-id-api-service-6009";
         set $proxy_host          $proxy_upstream_name;
         set $pass_access_scheme  $scheme;
         set $pass_server_port    $server_port;
@@ -364,7 +364,7 @@ metadata:
         set $ingress_name   "bold-ingress2";
         set $service_name   "";
         set $service_port   "";
-        set $location_path  "/idums6002/ums(/|${literal_dollar})(.*)";
+        set $location_path  "/idums6009/ums(/|${literal_dollar})(.*)";
         rewrite_by_lua_block {
                 lua_ingress.rewrite({
                         force_ssl_redirect = false,
@@ -388,7 +388,7 @@ metadata:
         }
         port_in_redirect off;
         set $balancer_ewma_score -1;
-        set $proxy_upstream_name "${bold_namespace}-id-ums-service-6002";
+        set $proxy_upstream_name "${bold_namespace}-id-ums-service-6010";
         set $proxy_host          $proxy_upstream_name;
         set $pass_access_scheme  $scheme;
         set $pass_server_port    $server_port;
