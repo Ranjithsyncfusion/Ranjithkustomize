@@ -22,19 +22,19 @@ spec:
  storageClassName: azurefile
  azureFile:
    secretName: bold-azure-secret
-   shareName: sharename
+   shareName: sharename1
    readOnly: false
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
- name: bold-fileserver-claim
+ name: bold-fileserver-claim1
  namespace: bold-services-prod
 spec:
  accessModes:
  - ReadWriteMany
  storageClassName: azurefile
- volumeName: bold-fileserver
+ volumeName: bold-fileserver1
  resources:
    requests:
      storage: 3Gi
